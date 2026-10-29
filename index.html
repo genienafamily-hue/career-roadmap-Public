@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Market Strategy &amp; Income Roadmap</title>
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0e1a2e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Career Coach">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{--bg:#f3f5f7;--panel:#ffffff;--ink:#2f4156;--mute:#667889;--line:#c9d3dc;--soft:#e6edf2;--acc:#2f6f8f;--ok:#2e7d5b;--bad:#b4442f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f161d;--panel:#18222c;--ink:#e3eaf0;--mute:#9aabba;--line:#33424f;--soft:#223140;--acc:#6fb3d6;--ok:#5fc59a;--bad:#f08a72;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f161d;--panel:#18222c;--ink:#e3eaf0;--mute:#9aabba;--line:#33424f;--soft:#223140;--acc:#6fb3d6;--ok:#5fc59a;--bad:#f08a72;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:16px/1.5 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;margin:0;color:var(--ink)}
+.wrap{max-width:900px;margin:0 auto;padding:18px 18px 40px}
+header h1{font-size:1.7rem;line-height:1.2}header p{margin:4px 0 12px;color:var(--mute)}
+.next{display:flex;gap:10px;align-items:center;background:var(--panel);border:1.5px solid var(--acc);border-radius:12px;padding:10px 14px;margin-bottom:14px}
+.next b{color:var(--acc);white-space:nowrap}
+nav{display:flex;gap:6px;border-bottom:2px solid var(--line);margin-bottom:18px;overflow-x:auto}
+nav button{border:0;background:none;color:var(--mute);font:inherit;font-weight:600;padding:9px 14px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap}
+nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--acc)}
+.hint{color:var(--mute);font-size:.92rem;margin:0 0 14px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:0}
+textarea{width:100%;min-height:80px;resize:vertical}
+.btn{background:var(--acc);color:var(--panel);border:0;border-radius:8px;padding:8px 14px;font:inherit;font-weight:600;cursor:pointer}
+.btn.alt{background:var(--panel);color:var(--ink);border:1.5px solid var(--line)}.btn:disabled{opacity:.5}
+.x{background:none;border:0;color:var(--mute);cursor:pointer;font:inherit;padding:2px 6px}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.quad{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}
+.quad:before,.quad:after{content:"";position:absolute;pointer-events:none}
+.quad:before{left:50%;top:0;bottom:0;border-left:2px dashed var(--line)}
+.quad:after{top:50%;left:0;right:0;border-top:2px dashed var(--line)}
+.pc{position:relative;z-index:1;display:flex;gap:12px;align-items:center;text-align:left;background:var(--panel);border:2px solid var(--line);border-radius:14px;padding:14px;font:inherit;color:var(--ink);cursor:pointer}
+.pc[aria-pressed="true"]{border-color:var(--acc)}
+.pc .num{flex:none;width:34px;height:34px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;font-weight:700}
+.pc h3{font-size:1.05rem}.pc span.d{display:block;color:var(--mute);font-size:.88rem;line-height:1.3}
+.pc .t{flex:1}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:18px}
+.panel h2{font-size:1.2rem;margin-bottom:8px}
+.row{display:flex;gap:8px;align-items:center;margin:6px 0}.row>input[type=text],.row>input:not([type]){flex:1}
+.st{flex:none;width:32px;height:32px;border-radius:50%;border:2px solid var(--line);background:var(--panel);color:var(--acc);cursor:pointer;font-size:1rem;line-height:1}
+.st[data-s="doing"]{border-color:var(--acc)}.st[data-s="done"]{background:var(--ok);border-color:var(--ok);color:#fff}
+.done input{text-decoration:line-through;color:var(--mute)}
+.tag{font-size:.76rem;color:var(--mute);border:1px solid var(--line);border-radius:999px;padding:0 8px;white-space:nowrap}
+.bar{height:8px;background:var(--soft);border-radius:4px;overflow:hidden;margin:6px 0}.bar b{display:block;height:100%;background:var(--acc)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px}
+.pil{background:var(--panel);border:2px solid var(--ink);border-radius:6px 6px 14px 14px;overflow:hidden}
+.pil h3{background:var(--ink);color:var(--panel);padding:9px 12px;font-size:1rem;text-align:center}
+.pil .b{padding:10px}
+.pil .r{display:grid;grid-template-columns:1fr 78px 52px auto;gap:5px;margin:6px 0}
+.pil .r input,.pil .r select{width:100%;padding:5px 6px;font-size:.88rem}
+.sub{text-align:right;font-weight:600;border-top:1px solid var(--line);margin-top:8px;padding-top:6px}
+.big{font-family:"Source Serif 4",Georgia,serif;font-size:1.6rem;font-weight:700}
+.gap.bad{color:var(--bad)}.gap.ok{color:var(--ok)}
+.rail{border-left:3px solid var(--line);margin-left:16px;padding-left:24px}
+.mv{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:12px}
+.mv:before{content:attr(data-n);position:absolute;left:-43px;top:10px;width:30px;height:30px;border-radius:50%;background:var(--panel);border:3px solid var(--ink);display:grid;place-items:center;font-weight:700;font-size:.9rem}
+.mv.first{border-color:var(--acc)}.mv.first:before{border-color:var(--acc);color:var(--acc)}
+.mv .row{margin:0;flex-wrap:wrap}
+.mv .tag.nx{color:var(--acc);border-color:var(--acc)}
+details.panel summary{cursor:pointer;font-weight:600;font-family:"Source Serif 4",Georgia,serif;font-size:1.1rem}
+.fix{border:1.5px solid var(--acc);border-radius:12px;padding:12px;margin:10px 0}
+.ans{display:block;width:100%;text-align:left;margin:6px 0 0;padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit;cursor:pointer}
+.ans:hover{border-color:var(--acc)}
+.trail{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+#log{display:flex;flex-direction:column;gap:12px;min-height:260px;max-height:55vh;overflow:auto;padding:4px}
+.msg{max-width:92%;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--panel);overflow-wrap:anywhere}
+.msg.me{align-self:flex-end;background:var(--ink);color:var(--panel);border-color:var(--ink)}
+.msg p{margin:0 0 8px}.msg p:last-child{margin:0}.msg ul{margin:4px 0 8px;padding-left:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:6px 12px;font:inherit;font-size:.88rem;cursor:pointer}
+.chip:hover,.pc:hover{border-color:var(--acc)}
+.err{color:var(--bad)}.none{color:var(--mute)}
+details.panel .hint b{color:var(--ink)}
+.nw{margin:0}.tk{margin-left:16px;border-left:2px solid var(--line);padding-left:18px}
+.nd{position:relative;background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:8px 10px;margin:8px 0}
+.tk>.nw>.nd:after{content:"";position:absolute;left:-20px;top:24px;width:18px;border-top:2px solid var(--line)}
+.nd.done{border-color:var(--ok)}.nd.first{border-color:var(--acc);box-shadow:0 0 0 3px color-mix(in srgb,var(--acc) 20%,transparent)}.nd.skip{opacity:.5}
+.nd .row{margin:2px 0;flex-wrap:wrap}.nd .small select{font-size:.85rem;padding:4px 6px}
+.nn{font-weight:700;min-width:34px;color:var(--mute)}
+.sb{flex:none;min-width:34px;text-align:center;border:2px solid var(--line);border-radius:999px;font-size:.82rem;font-weight:700;padding:1px 6px;color:var(--mute)}
+.sb.ok{background:var(--ok);border-color:var(--ok);color:#fff}.sb.part{border-color:var(--acc);color:var(--acc)}
+.gate{display:flex;align-items:center;gap:8px;margin:8px 0 0;font-size:.88rem;color:var(--mute);flex-wrap:wrap}
+.gb{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--ink);background:var(--panel);color:var(--ink);border-radius:999px;padding:3px 12px 3px 8px;font:inherit;font-weight:700;font-size:.8rem;cursor:pointer}
+.gb svg{width:22px;height:16px}
+.sm{padding:4px 9px;font-size:.82rem}
+@media (max-width:760px){.pillars{grid-template-columns:1fr}.pil .r{grid-template-columns:1fr 84px 56px auto}.wrap{padding:14px 12px 34px}}
+@media (max-width:560px){.quad{grid-template-columns:1fr}.quad:before,.quad:after{display:none}header h1{font-size:1.4rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><h1>My Market Strategy &amp; Income Roadmap</h1><p>A dynamic plan for personal growth and financial stability. Everything here is editable.</p></header>
+<div class="next" id="next"></div>
+<nav role="tablist" id="nav">
+<button role="tab" data-a="nav" data-v="paths" aria-selected="true">1. Career paths</button>
+<button role="tab" data-a="nav" data-v="income" aria-selected="false">2. Income streams</button>
+<button role="tab" data-a="nav" data-v="road" aria-selected="false">3. Action roadmap</button>
+<button role="tab" data-a="nav" data-v="coach" aria-selected="false">4. Ask the coach</button>
+</nav>
+<section id="v-paths"></section>
+<section id="v-income" hidden></section>
+<section id="v-road" hidden></section>
+<section id="v-coach" hidden>
+<div class="panel">
+<div id="log" aria-live="polite"></div>
+<div class="chips" id="chips"></div>
+<div class="row"><input id="q" autocomplete="off" placeholder="Type your question here" aria-label="Your message"><button class="btn" id="go" type="button">Send</button></div>
+<button class="x" id="reset" type="button">Start a new conversation</button>
+</div>
+</section>
+</div>
+<script>
+var PATHS=[
+{id:"ent",n:"Entrepreneurship",d:"Building and scaling new ventures"},
+{id:"int",n:"Intellectual",d:"Leveraging expertise for high value"},
+{id:"fre",n:"Freelance",d:"Maintaining flexibility through market services"},
+{id:"skl",n:"Skilled",d:"Direct application in established roles"}];
+var STEPS={
+skl:[["Update my CV with my latest experience",0],["Pick 2 target role titles",0],["Start a free certification",0],["Send 8-10 targeted applications per week",0],["Start the job",1]],
+fre:[["Write my one-page service offer",0],["Build 2 case studies from past work",0],["Pitch 20 potential clients",0],["Run 3 paid pilot projects",1],["Convert pilots into retainers",1]],
+int:[["Rewrite LinkedIn around my offer",0],["Publish 1 post per week",0],["Outline a first workshop",0],["Collect feedback from 10 contacts",0],["Sell the first paid workshop",1]],
+ent:[["Define my venture idea in 3 lines",0],["List 20 target companies",0],["Run 10 discovery calls",0],["Decide go or no-go from the data",0],["Build a minimal paid offer",1]]};
+var GROUPS=[{g:"act",n:"Active income",rows:[["Full-time salary",1],["Part-time role",1],["Project fees",2]]},
+{g:"kn",n:"Knowledge income",rows:[["Workshops",3],["Coaching",3],["Digital products",3]]},
+{g:"pas",n:"Passive and capital",rows:[["Dividends",3],["Rental income",3],["Royalties",3]]}];
+var uid=function(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)};
+function def(){var s={sel:"skl",paths:{},inc:{},base:1000,moves:[],msgs:[],trail:[],cur:"q1",seen:0};
+PATHS.forEach(function(p){s.paths[p.id]={d:p.d,note:"",steps:STEPS[p.id].map(function(a){return{id:uid(),text:a[0],perm:a[1],s:"todo"}})}});
+GROUPS.forEach(function(g){s.inc[g.g]=g.rows.map(function(r){return{id:uid(),name:r[0],amt:0,pri:r[1]}})});
+s.moves=[{id:uid(),text:"Apply for roles that fit my skills",path:"skl",pri:1,done:0},
+{id:uid(),text:"Set up a freelance service for immediate cash flow",path:"fre",pri:1,done:0},
+{id:uid(),text:"Finalize the requirements for my venture idea",path:"ent",pri:2,done:0}];return s}
+var st;try{st=JSON.parse(localStorage.getItem("roadmap1"))}catch(e){}
+if(!st||!st.paths)st=def();
+function save(){try{localStorage.setItem("roadmap1",JSON.stringify(st))}catch(e){}}
+var $=function(i){return document.getElementById(i)};
+function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function P(id){return PATHS.filter(function(p){return p.id===id})[0]}
+function eur(n){return(n<0?"-":"")+"€"+Math.abs(Math.round(n)).toLocaleString("en-GB")}
+function pct(id){var s=st.paths[id].steps;return s.length?Math.round(s.filter(function(x){return x.s==="done"}).length/s.length*100):0}
+function ring(v){var c=113.1;return'<svg width="46" height="46" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="18" fill="none" stroke="var(--soft)" stroke-width="5"/><circle cx="22" cy="22" r="18" fill="none" stroke="var(--acc)" stroke-width="5" stroke-linecap="round" stroke-dasharray="'+c+'" stroke-dashoffset="'+(c*(1-v/100)).toFixed(1)+'" transform="rotate(-90 22 22)"/><text x="22" y="26" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">'+v+'%</text></svg>'}
+function leaf(t,p,pri){return{id:uid(),text:t,path:p,pri:pri,done:0,kids:[]}}
+function branch(t,g,k){return{id:uid(),text:t,gate:g,kids:k}}
+function defTree(){return branch("Reach an income above my monthly baseline","and",[
+branch("Get my foundation ready","and",[leaf("Update my CV","skl",1),leaf("Write my one-page service offer","fre",1)]),
+branch("Bring in my first cash","or",[leaf("Apply for roles that fit my skills","skl",1),leaf("Set up a freelance service for immediate cash flow","fre",2)]),
+branch("Build the bigger bet","and",[leaf("Finalize the requirements for my venture idea","ent",2),leaf("Run 10 discovery calls","ent",2)])])}
+function isLeaf(n){return!n.kids||!n.kids.length}
+function stat(n){if(isLeaf(n))return{d:!!n.done,p:!!n.done,c:n.done?1:0,t:1};var ks=n.kids.map(stat),dn=ks.filter(function(k){return k.d}).length;return{d:n.gate==="or"?dn>0:dn===ks.length,p:dn>0||ks.some(function(k){return k.p}),c:dn,t:ks.length}}
+function nums(n,pre,map){(n.kids||[]).forEach(function(k,i){var x=pre?pre+"."+(i+1):""+(i+1);map[k.id]=x;nums(k,x,map)})}
+function nextLeaf(n){if(isLeaf(n))return n.done?null:n;if(stat(n).d)return null;
+if(n.gate==="or"){var ks=n.kids.filter(function(k){return!stat(k).d}),pk=ks.filter(function(k){return stat(k).p});if(pk.length)ks=pk;
+var c=ks.map(nextLeaf).filter(Boolean);c.sort(function(a,b){return(a.pri||3)-(b.pri||3)});return c[0]||null}
+for(var i=0;i<n.kids.length;i++){var r=nextLeaf(n.kids[i]);if(r)return r}return null}
+function locate(id){var res=null;(function w(n,p){if(n.id===id){res={n:n,p:p};return}(n.kids||[]).forEach(function(k){if(!res)w(k,n)})})(st.tree,null);return res}
+function drawNext(){var map={},n=nextLeaf(st.tree);nums(st.tree,"",map);
+$("next").innerHTML=n?"<b>Next move "+(map[n.id]||"")+"</b><span>"+esc(n.text)+"</span>":"<b>Goal reached</b><span>Every needed step is done. Add new steps in tab 3.</span>"}
+function drawPaths(){var h='<p class="hint">Four ways to earn. Tap one to open its steps, edit it, and track progress.</p><div class="quad">';
+PATHS.forEach(function(p,i){h+='<button type="button" class="pc" data-a="sel" data-p="'+p.id+'" aria-pressed="'+(st.sel===p.id)+'"><span class="num">'+(i+1)+'</span><span class="t"><h3>'+p.n+'</h3><span class="d">'+esc(st.paths[p.id].d)+"</span></span>"+ring(pct(p.id))+"</button>"});
+h+="</div>";var d=st.paths[st.sel],p=P(st.sel);
+h+='<div class="panel"><h2>'+p.n+'</h2><div class="row"><input data-c="desc" value="'+esc(d.d)+'" aria-label="One-line description"></div><div class="bar"><b style="width:'+pct(st.sel)+'%"></b></div><p class="hint">Tap a circle to change a step: not started, in progress, done.</p>';
+d.steps.forEach(function(s){var sym=s.s==="done"?"✓":s.s==="doing"?"◐":"";h+='<div class="row'+(s.s==="done"?" done":"")+'"><button type="button" class="st" data-a="cyc" data-s="'+s.id+'" data-st="'+s.s+'" aria-label="Status: '+s.s+'">'+sym+'</button><input data-c="stext" data-s="'+s.id+'" value="'+esc(s.text)+'" aria-label="Step">'+(s.perm?'<span class="tag">may need a permit</span>':"")+'<button type="button" class="x" data-a="delstep" data-s="'+s.id+'" aria-label="Delete step">✕</button></div>'});
+h+='<div class="row"><input id="ns" placeholder="Add your own step" aria-label="New step"><button type="button" class="btn alt" data-a="addstep">Add</button></div><h3 style="margin-top:14px">Ideas and notes</h3><textarea data-c="note" aria-label="Ideas and notes" placeholder="Write ideas, contacts or what happened">'+esc(d.note)+'</textarea><div class="row"><button type="button" class="btn alt" data-a="askpath">Ask the coach about this path</button></div></div>';
+$("v-paths").innerHTML=h}
+function incTotals(){var t=0,all=0;GROUPS.forEach(function(g){st.inc[g.g].forEach(function(r){var a=+r.amt||0;all+=a;if(r.pri<=2)t+=a})});return{t:t,all:all}}
+function drawIncome(){var h='<p class="hint">Estimate what each source could bring per month. Priority 1–2 counts toward your baseline.</p><div class="pillars">';
+GROUPS.forEach(function(g){var sub=0;h+='<div class="pil"><h3>'+g.n+'</h3><div class="b">';
+st.inc[g.g].forEach(function(r){sub+=+r.amt||0;h+='<div class="r"><input data-c="rname" data-g="'+g.g+'" data-i="'+r.id+'" value="'+esc(r.name)+'" placeholder="Name this source" aria-label="Source"><input type="number" min="0" step="10" data-c="ramt" data-g="'+g.g+'" data-i="'+r.id+'" value="'+(+r.amt||0)+'" aria-label="Euro per month"><select data-c="rpri" data-g="'+g.g+'" data-i="'+r.id+'" aria-label="Priority">'+[1,2,3].map(function(n){return'<option value="'+n+'"'+(r.pri===n?" selected":"")+">P"+n+"</option>"}).join("")+'</select><button type="button" class="x" data-a="delrow" data-g="'+g.g+'" data-i="'+r.id+'" aria-label="Delete source">✕</button></div>'});
+h+='<button type="button" class="btn alt" data-a="addrow" data-g="'+g.g+'">Add source</button><div class="sub">'+eur(sub)+" per month</div></div></div>"});
+h+="</div>";var T=incTotals(),gap=T.t-st.base;
+h+='<div class="panel"><h2>Target strategy</h2><div class="row"><span>Monthly cost baseline (€)</span><input type="number" min="0" step="10" data-c="base" value="'+(+st.base||0)+'" style="max-width:120px" aria-label="Baseline"></div><div class="bar"><b style="width:'+Math.min(100,st.base?Math.round(T.t/st.base*100):0)+'%"></b></div><div class="row"><span>Counted now (priority 1–2)</span><span class="big">'+eur(T.t)+'</span></div><div class="row"><span>Gap to baseline</span><span class="big gap '+(gap<0?"bad":"ok")+'">'+(gap>0?"+":"")+eur(gap)+'</span></div><p class="hint">All sources together: '+eur(T.all)+'. Focus on priority 1–2 to close the gap. Quick-money jobs can give immediate cash flow while you build the rest. Paid work, freelancing and business can depend on your permission to work: check that before you start.</p></div>';
+$("v-income").innerHTML=h}
+var AND_SVG='<svg viewBox="0 0 24 18" aria-hidden="true"><path d="M2 2H11A7 7 0 0 1 11 16H2Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
+var OR_SVG='<svg viewBox="0 0 24 18" aria-hidden="true"><path d="M2 2C10 2 18 5 22 9C18 13 10 16 2 16C6 12 6 6 2 2Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
+function nodeH(n,num,skip,first,root){var s=stat(n),lf=isLeaf(n),h='<div class="nw"><div class="nd'+(s.d?" done":"")+(skip?" skip":"")+(n===first?" first":"")+'"><div class="row"><span class="nn">'+(root?"Goal":num)+"</span>";
+if(lf)h+='<input type="checkbox" data-c="ndone" data-i="'+n.id+'"'+(n.done?" checked":"")+' aria-label="Done" style="width:22px;height:22px;padding:0">';
+else h+='<span class="sb'+(s.d?" ok":s.p?" part":"")+'" title="Done so far">'+(s.d?"✓":s.c+"/"+s.t)+"</span>";
+h+='<input data-c="ntext" data-i="'+n.id+'" value="'+esc(n.text)+'" aria-label="Step" style="flex:1;min-width:140px">'+(n===first?'<span class="tag" style="color:var(--acc);border-color:var(--acc)">Next</span>':"")+(skip&&!s.d?'<span class="tag">not needed</span>':"")+'</div><div class="row small">';
+if(lf)h+='<select data-c="npath" data-i="'+n.id+'" aria-label="Path">'+PATHS.map(function(p){return'<option value="'+p.id+'"'+(n.path===p.id?" selected":"")+">"+p.n+"</option>"}).join("")+'</select><select data-c="npri" data-i="'+n.id+'" aria-label="Priority">'+[1,2,3].map(function(k){return'<option value="'+k+'"'+(n.pri===k?" selected":"")+">Priority "+k+"</option>"}).join("")+"</select>";
+h+='<button type="button" class="btn alt sm" data-a="addkid" data-i="'+n.id+'">+ Sub-step</button>';
+if(!root)h+='<button type="button" class="x" data-a="up" data-i="'+n.id+'" aria-label="Move up">▲</button><button type="button" class="x" data-a="down" data-i="'+n.id+'" aria-label="Move down">▼</button><button type="button" class="x" data-a="delnode" data-i="'+n.id+'" aria-label="Delete step">✕</button>';
+h+="</div></div>";
+if(!lf){var or=n.gate==="or";h+='<div class="tk"><div class="gate"><button type="button" class="gb" data-a="gate" data-i="'+n.id+'" aria-label="Switch AND or OR">'+(or?OR_SVG+"OR":AND_SVG+"AND")+"</button><span>"+(or?"Any one of these is enough":"All of these, in order")+"</span></div>";
+n.kids.forEach(function(k,i){h+=nodeH(k,num&&!root?num+"."+(i+1):""+(i+1),skip||(or&&s.d&&!stat(k).d),first,false)});h+="</div>"}
+return h+"</div>"}
+function drawRoad(){var first=nextLeaf(st.tree),h='<p class="hint">Your plan as a problem-solving chart. <b>AND</b> means do all of the steps below it, in order. <b>OR</b> means any one is enough. Tap the AND/OR badge to switch. Add a sub-step to split any step, for example 3 into 3.1 and 3.2.</p>';
+h+=nodeH(st.tree,"",false,first,true);
+h+='<div class="panel"><div class="row"><input id="nm" placeholder="Add a new main step, for example: Send my CV to 3 companies" aria-label="New main step"><button type="button" class="btn" data-a="addtop">Add</button></div></div>';
+h+='<details class="panel"><summary>Stuck? Find my next move</summary><div id="ts"></div></details>';
+$("v-road").innerHTML=h;drawTs()}
+var G={q1:{q:"Are you allowed to work or run a business right now?",o:[["Yes","q2"],["Not sure, or no","a1"]]},
+a1:{t:"Get clarity on your permission to work",w:"Preparation is still possible: CV, offer, skills and conversations.",m:[["Ask an adviser in writing what work I may do","skl"],["Finish my CV and one-page service offer","skl"]],n:[["Continue with preparation","q3"]]},
+q2:{q:"Can you cover your costs for the next 2 months?",o:[["Yes","q3"],["No","a2"]]},
+a2:{t:"Secure short-term income first",w:"Quick-money jobs protect your runway. Use legal contracts only.",m:[["Apply to 5 short-term or part-time jobs","skl"],["Set up one quick-money service offer","fre"]],n:[["Continue","q3"]]},
+q3:{q:"Are your CV and one-page offer ready?",o:[["Yes","q4"],["No","a3"]]},
+a3:{t:"Finish your CV and offer",w:"Nobody can say yes to what they cannot read on one page.",m:[["Update my CV","skl"],["Write my one-page service offer","fre"]],n:[["Continue","q4"]]},
+q4:{q:"Are you getting replies to your outreach?",o:[["No replies","a4"],["Replies, no offers","a5"],["Offers or clients","q5"]]},
+a4:{t:"Fix your reach",w:"Few replies means weak targeting or too little volume.",m:[["List 20 target companies or clients","fre"],["Send 8-10 applications this week","skl"],["Send 5 networking messages","int"]],n:[["Check again next week","q4"]]},
+a5:{t:"Turn conversations into offers",w:"Your proof may be thin.",m:[["Prepare 3 interview stories with numbers","skl"],["Write 2 short case studies","fre"]],n:[["Check again next week","q4"]]},
+q5:{q:"Do you have more than one income source?",o:[["No, only one","a6"],["Yes, two or more","a7"]]},
+a6:{t:"Add a second stream",w:"One source is fragile.",m:[["Publish one useful post each week","int"],["Pilot one freelance client","fre"]],n:[]},
+a7:{t:"Scale and test the bigger bet",w:"Now you can test your venture idea.",m:[["Turn my best client into a retainer","fre"],["Run 10 discovery calls for my venture idea","ent"]],n:[]}};
+function drawTs(){var c=G[st.cur],h='<div class="trail">'+st.trail.map(function(t){return'<span class="tag">'+esc(t[0])+"</span>"}).join("")+"</div>";
+if(c.q){h+="<h3>"+esc(c.q)+"</h3>";c.o.forEach(function(o,i){h+='<button type="button" class="ans" data-a="tsa" data-i="'+i+'">'+esc(o[0])+"</button>"});h+='<p class="hint">Not sure? Pick the closest answer.</p>'}
+else{h+='<div class="fix"><h3>'+esc(c.t)+"</h3><p>"+esc(c.w)+"</p><ul>"+c.m.map(function(m){return"<li>"+esc(m[0])+"</li>"}).join("")+'</ul><button type="button" class="btn" data-a="tsadd">Add these to my roadmap</button></div>';
+c.n.forEach(function(o,i){h+='<button type="button" class="ans" data-a="tsn" data-i="'+i+'">'+esc(o[0])+"</button>"})}
+h+='<div class="row"><button type="button" class="btn alt" data-a="tsback"'+(st.trail.length?"":" disabled")+'>Back</button><button type="button" class="btn alt" data-a="tsreset">Start over</button></div>';$("ts").innerHTML=h}
+function render(){if(!st.tree)st.tree=defTree();drawNext();drawPaths();drawIncome();drawRoad();if(window.fid){var el=document.querySelector('[data-c="ntext"][data-i="'+window.fid+'"]');window.fid=null;if(el){el.focus();el.select()}}}
+function show(v){["paths","income","road","coach"].forEach(function(k){$("v-"+k).hidden=k!==v});
+document.querySelectorAll("#nav button").forEach(function(b){b.setAttribute("aria-selected",b.dataset.v===v)})}
+function find(arr,id){return arr.filter(function(x){return x.id===id})[0]}
+document.addEventListener("click",function(e){var b=e.target.closest("[data-a]");if(!b||b.disabled)return;var a=b.dataset.a,d=b.dataset,pp=st.paths[st.sel];
+if(a==="nav"){show(d.v);return}
+if(a==="sel")st.sel=d.p;
+else if(a==="cyc"){var s=find(pp.steps,d.s);s.s=s.s==="todo"?"doing":s.s==="doing"?"done":"todo"}
+else if(a==="delstep")pp.steps=pp.steps.filter(function(x){return x.id!==d.s});
+else if(a==="addstep"){var v=$("ns").value.trim();if(!v)return;pp.steps.push({id:uid(),text:v,perm:0,s:"todo"})}
+else if(a==="addrow")st.inc[d.g].push({id:uid(),name:"",amt:0,pri:2});
+else if(a==="delrow")st.inc[d.g]=st.inc[d.g].filter(function(x){return x.id!==d.i});
+else if(a==="addtop"){var m=$("nm").value.trim();if(!m)return;st.tree.kids.push(leaf(m,st.sel,2))}
+else if(a==="addkid"){var r=locate(d.i),n=r.n,k=leaf("New step",n.path||st.sel,2);if(isLeaf(n)){n.gate="and";n.done=0;n.kids=[]}n.kids.push(k);window.fid=k.id}
+else if(a==="up"||a==="down"){var r2=locate(d.i),ks=r2.p.kids,ix=ks.indexOf(r2.n),jx=a==="up"?ix-1:ix+1;if(jx<0||jx>=ks.length)return;ks.splice(jx,0,ks.splice(ix,1)[0])}
+else if(a==="delnode"){var r3=locate(d.i);r3.p.kids=r3.p.kids.filter(function(x){return x.id!==d.i})}
+else if(a==="gate"){var r4=locate(d.i);r4.n.gate=r4.n.gate==="or"?"and":"or"}
+else if(a==="tsa"){var c=G[st.cur];st.trail.push([c.o[+d.i][0],st.cur]);st.cur=c.o[+d.i][1]}
+else if(a==="tsn"){var c2=G[st.cur];st.trail.push([c2.n[+d.i][0],st.cur]);st.cur=c2.n[+d.i][1]}
+else if(a==="tsback"){var l=st.trail.pop();if(l)st.cur=l[1]}
+else if(a==="tsreset"){st.trail=[];st.cur="q1"}
+else if(a==="tsadd"){var cc=G[st.cur];if(!st.tree.kids.some(function(x){return x.text===cc.t}))st.tree.kids.push(branch(cc.t,"and",cc.m.map(function(m){return leaf(m[0],m[1],1)})))}
+else if(a==="askpath"){show("coach");ask("Where am I on the "+P(st.sel).n+" path, and what is my single next step?");return}
+save();render()});
+document.addEventListener("change",function(e){var t=e.target,c=t.dataset.c;if(!c)return;var v=t.value,pp=st.paths[st.sel];
+if(c==="desc")pp.d=v.trim()||P(st.sel).d;
+else if(c==="stext"){var s=find(pp.steps,t.dataset.s);if(s)s.text=v.trim()||s.text}
+else if(c==="note")pp.note=v;
+else if(c==="rname"||c==="ramt"||c==="rpri"){var r=find(st.inc[t.dataset.g],t.dataset.i);if(r){if(c==="rname")r.name=v;else if(c==="ramt")r.amt=Math.max(0,+v||0);else r.pri=+v}}
+else if(c==="base")st.base=Math.max(0,+v||0);
+else{var r=locate(t.dataset.i);if(r){var n=r.n;if(c==="ndone")n.done=t.checked?1:0;else if(c==="ntext")n.text=v.trim()||n.text;else if(c==="npath")n.path=v;else if(c==="npri")n.pri=+v}}
+save();render()});
+document.addEventListener("keydown",function(e){if(e.key!=="Enter"||e.target.tagName!=="INPUT")return;var bt=e.target.parentNode.querySelector("button[data-a]");if(e.target.id==="q"){return}if(bt&&(e.target.id==="ns"||e.target.id==="nm")){e.preventDefault();bt.click()}});
+var SYS="You are a practical, honest career and business coach for one person. Use the plan data below: four career paths (Entrepreneurship, Intellectual, Freelance, Skilled), income streams (active, knowledge, passive and capital), a monthly cost baseline, and an action roadmap.\nRules: 1) Always check whether an income route needs a work permit, registration or licence where the person lives and say so briefly; never suggest undeclared or cash-in-hand work, and never help bypass legal requirements; for legal, tax or immigration questions, point to qualified advisers. 2) Be concrete: give next steps with a timeframe, a way to track progress, and a number where possible. 3) Be realistic, name risks, push back when a plan is weak. 4) Use simple everyday words and short sentences, explain jargon, keep answers under 250 words, plain text, short lists with '-' when useful, at most one question at the end. 5) Reply in the language the person writes in.";
+function ctx(){var t=incTotals(),o="PATHS:\n";PATHS.forEach(function(p){var d=st.paths[p.id];o+=p.n+" ("+d.d+"): "+d.steps.map(function(s){return s.text+" ["+s.s+"]"}).join(" | ")+"; notes: "+(d.note||"none")+"\n"});
+o+="INCOME (EUR per month, priority): ";GROUPS.forEach(function(g){o+=g.n+": "+st.inc[g.g].map(function(r){return r.name+" "+(+r.amt||0)+" P"+r.pri}).join(", ")+"; "});
+o+="\nBASELINE: "+st.base+". Counted (priority 1-2): "+t.t+". Gap: "+(t.t-st.base)+".\nROADMAP as a logic tree (ALL = every child needed in order, ANY ONE = one child is enough):\n"+tt(st.tree,"",0);return o}
+function tt(n,num,d){var s=stat(n),l=(num?num+" ":"")+n.text+(isLeaf(n)?" ["+(n.done?"done":"open")+", P"+(n.pri||2)+", "+P(n.path||"skl").n+"]":" ["+(n.gate==="or"?"ANY ONE":"ALL")+"; "+(s.d?"done":s.c+"/"+s.t)+"]"),o=Array(d+1).join("  ")+l+"\n";(n.kids||[]).forEach(function(k,i){o+=tt(k,num?num+"."+(i+1):""+(i+1),d+1)});return o}
+function fmt(t){var h="",inl=false;esc(t).split("\n").forEach(function(l){var b=l.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>");
+if(/^\s*[-•]\s+/.test(l)){if(!inl){h+="<ul>";inl=true}h+="<li>"+b.replace(/^\s*[-•]\s+/,"")+"</li>"}else{if(inl){h+="</ul>";inl=false}if(l.trim())h+="<p>"+b+"</p>"}});return h+(inl?"</ul>":"")}
+function addMsg(role,text){var d=document.createElement("div");d.className="msg "+(role==="user"?"me":"");d.innerHTML=role==="user"?"<p>"+esc(text)+"</p>":fmt(text);$("log").appendChild(d);$("log").scrollTop=$("log").scrollHeight;return d}
+function drawLog(){var l=$("log");l.innerHTML="";if(!st.msgs.length){l.innerHTML='<p class="none">Ask in your own words, for example: “Which path should I start with?” The coach sees your whole plan.</p>';return}st.msgs.forEach(function(m){addMsg(m.role,m.content)})}
+var CH=["What should I do this week?","Which path should I start with?","Is my income plan realistic?","Help me write my first message","What is my biggest risk?"];
+$("chips").innerHTML=CH.map(function(c){return'<button type="button" class="chip">'+c+"</button>"}).join("");
+$("chips").onclick=function(e){if(e.target.classList.contains("chip"))ask(e.target.textContent)};
+var busy=false;
+async function ask(text){text=(text||"").trim();if(!text||busy)return;var sample;try{sample=await claude.use("sample")}catch(e){sample=null}
+if(!sample){addMsg("assistant","The AI coach is not available in this view. Open the artifact in claude.ai to chat.");return}
+busy=true;$("go").disabled=true;if(!st.msgs.length)$("log").innerHTML="";
+st.msgs.push({role:"user",content:text});addMsg("user",text);$("q").value="";
+var input=[{role:"user",content:SYS+"\n\nPLAN DATA:\n"+ctx()+"\n\nBegin."},{role:"assistant",content:"Understood. I will coach within these rules."}];st.msgs.slice(-14).forEach(function(m){input.push(m)});
+var out=addMsg("assistant","Thinking...");
+try{var r=await sample(input,{cache:false,modelTier:"default",onText:function(x){out.innerHTML=fmt(x.text);$("log").scrollTop=$("log").scrollHeight}});out.innerHTML=fmt(r.text);st.msgs.push({role:"assistant",content:r.text});save()}
+catch(e){st.msgs.pop();out.innerHTML='<p class="err">'+esc(e&&e.code==="rate_limited"?"Too many requests. Wait a minute and try again.":"The coach could not answer. Check your connection and send again.")+"</p>"}
+busy=false;$("go").disabled=false;$("q").focus()}
+$("go").onclick=function(){ask($("q").value)};
+$("q").onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();ask($("q").value)}};
+$("reset").onclick=function(){st.msgs=[];save();drawLog()};
+render();drawLog();
+</script>
+</body>
+</html>

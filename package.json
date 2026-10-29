@@ -1,0 +1,10 @@
+{
+  "name": "career-roadmap",
+  "version": "1.0.0",
+  "description": "My Market Strategy and Income Roadmap: a static web app (no build step) with career paths, income streams and an AND/OR action roadmap.",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8080"
+  }
+}
